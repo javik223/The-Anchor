@@ -1,0 +1,112 @@
+h1, .alpha {
+	font-size: rem-calc(36);
+	line-height: 1.2;
+	font-weight: 200;
+
+	&.heading {
+		margin-bottom: rem-calc(16);
+	}
+
+	@media #{$medium-up} {
+		font-size: rem-calc(48);
+	}
+}
+h2, .beta {
+	@extend h1;
+	font-size: rem-calc(30);
+	line-height: 1.4;
+
+
+	@media #{$medium-up} {
+		font-size: rem-calc(40);	
+	}
+}
+
+h3, .gamma {
+	@extend h1;
+	font-size: rem-calc(26);
+	line-height: 1.5;
+
+	@media #{$medium-up} {
+		font-size: rem-calc(32);
+	}
+}
+h4, .omega {
+	@extend h1;
+	font-size: rem-calc(20);
+	line-height: 1.6;
+	@media #{$medium-up} {
+		font-size: rem-calc(26);
+	}
+}
+h5, .sigma {
+	@extend h1;
+	font-size: rem-calc(16);
+	line-height: 1.6;
+
+	@media #{$medium-up} {
+		font-size: rem-calc(18);
+	}
+}
+h6 {
+	@extend h1;
+	font-size: rem-calc(16);
+}
+p {
+	font-size: rem-calc(16);
+	margin-bottom: rem-calc(16);
+
+	@media #{$medium-up} {
+		font-size: rem-calc(18);
+	}
+}
+.small, small {
+	font-size: 80%;
+}
+.large {
+	font-size: rem-calc(48);
+
+	@media #{$medium-up} {
+		font-size: rem-calc(56);
+	}
+}
+.xlarge {
+	font-size: rem-calc(50);
+
+	@media #{$medium-up} {
+		font-size: rem-calc(62);
+	}
+}
+.xxlarge {
+	font-size: rem-calc(56);
+
+	@media #{$medium-up} {
+		font-size: rem-calc(70);
+	}
+}
+.xxxlarge {
+	font-size: rem-calc(60);
+
+	@media #{$medium-up} {
+		font-size: rem-calc(78);
+	}
+}
+.xxxxlarge {
+	font-size: rem-calc(66);
+
+	@media #{$medium-up} {
+		font-size: rem-calc(86);
+	}
+}
+strong {
+	font-weight: 400;
+}
+.centered {
+	text-align: center;
+}
+.highlight {
+	background-color: $primary;
+	display: inline;
+	line-height: 1.5;
+	color: $white;
+}

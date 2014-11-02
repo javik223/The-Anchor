@@ -1,0 +1,332 @@
+@import "bourbon";
+@import "compass/reset";
+@import "mixins/global";
+@import "_settings";
+@import "mixins/colors";
+@import "mixins/type";
+@import "mixins/grid";
+@import "mixins/fonts";
+
+
+html, body {
+	background-color: $black;
+	color: $gray;
+	font-family: "brandon-grotesque", 'Lato', Helvetica, sans;
+	//overflow-y: hidden;
+}
+body, p, h1, h2, h3, h4, h5, h6, span, div, a {
+	&::selection {
+		background-color: $primary;
+		color: lighten($gray, 20%);
+	}
+	&::-moz-selection {
+		background-color: $primary;
+		color: lighten($gray, 20%);
+	}
+	&::-webkit-selection {
+		background-color: $primary;
+		color: lighten($gray, 20%);
+	}
+}
+.header {
+	@extend .container;
+	z-index: 99;
+	float: left;
+	position: relative;
+}
+.nav {
+	@extend .row;
+	display: table;
+	margin-top: rem-calc(20);
+
+	@media #{$medium-up} {
+		margin-top: rem-calc(40);
+	}
+
+	ul {
+		display: table-cell;
+		align: center;
+		text-align: center;
+	}
+
+	li {
+		display: none;
+		text-align: center;
+		opacity: 0;
+
+		@media #{$medium-up} {
+			@include inline-block;
+		}
+
+		&.logo {
+			@include inline-block;
+			opacity: 0;
+
+			@media #{$small-only} {
+				img {
+					width: rem-calc(60);
+					height: rem-calc(60);
+				}
+			}
+		}
+	}
+
+	.logo {
+		padding-left: rem-calc(20);
+		padding-right: rem-calc(20);
+
+		h1 {
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			@include inline-block;
+		}
+	}
+
+	a {
+		color: lighten($gray, 20%);
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-left: rem-calc(10);
+		padding-right: rem-calc(10);
+		letter-spacing: 2px;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+.teaser {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	position: absolute;
+	display: table;
+	z-index: 1;
+	vertical-align: middle;
+}
+.teaser_item {
+	width: 100%;
+	height: 100%;
+	display: table;
+	position: absolute;
+	background-color: $black;
+	float: left;
+	overflow-x: hidden;
+
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: rem-calc(2);
+		position: relative;
+		line-height: rem-calc(50);
+		z-index: 100;
+		font-size: rem-calc(20);
+		
+		display: table-cell;
+		vertical-align: middle;
+		align: center;
+
+		@include user-select( none );
+
+		@media #{$medium-up} {
+			font-size: rem-calc(35);
+			letter-spacing: rem-calc(25);
+			line-height: rem-calc(80);
+			letter-spacing: rem-calc(20);
+		}
+	}
+
+	span {
+		@include inline-block;
+	}
+	[class^='word'] {
+		padding-left: rem-calc(3);
+		padding-right: rem-calc(3);
+
+		@media #{$medium-up} {
+			padding-left: rem-calc(10);
+			padding-right: rem-calc(10);
+		}
+	}
+
+	.the-anchor-text-image {
+		height: 100%;
+		vertical-align: middle;
+		position: relative;
+		z-index: 200;
+		display: table-cell;
+
+		img {
+			float: left;
+			max-width: 100% !important;
+			vertical-align: middle;
+		}
+	}
+
+	.the-anchor-bg {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		align: right;
+
+		img {
+			height: 100%;
+			width: auto;
+			max-width: none !important;
+			position: absolute;
+			top: 0;
+			right: rem-calc(-130);
+
+			@media #{$large-up} {
+				right: 0;
+			}
+		}
+	}
+
+	&.teaser_item-main {
+		vertical-align: middle;
+
+		h1 {
+			display: block;
+			width: 100%;
+			margin-top: 65%;
+
+			@media #{$medium-only} {
+				width: auto;
+				display: block !important;
+				margin-top: 50%;
+				text-align: left;
+				margin-left: 10%;
+			}
+
+			@media #{$large-up} {
+				width: 100%;
+				text-align: right;
+			}
+		}
+
+		.the-anchor-text-image {
+			margin-top: -5%;
+
+			@media #{$small-only} {
+				display: block;
+				width: 80%;
+				margin-left: 10%;
+			}
+
+			@media #{$medium-only} {
+				width: 80%;
+				margin-left: 5%;
+				display: block;
+				margin-top: 0;
+			}
+		
+		}
+	}
+}
+
+//Contact 
+
+.contact{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: table;
+	vertical-align: middle;
+	padding-top: rem-calc(100);
+	overflow-y: hidden;
+
+	.row {
+		height: 100%;
+		position: relative;
+		z-index: 100;
+	}
+
+	.contact_info {
+		display: table;
+		vertical-align: middle;
+		height: 100%;
+		padding-bottom: rem-calc(30);
+
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		a {
+			color: $gray;
+			text-decoration: none;
+			font-size: rem-calc(20);
+			@include transition ( all 0.6 ease-in );
+			@include inline-block;
+
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+}
+.contact_bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: image-url("dele-balogun-the-anchor.jpg") no-repeat;
+	background-size: auto 100%;
+	background-position: top 80%;
+	z-index: 0;
+	@include animation( scale 3.0s ease-in-out );
+
+	@media #{$large-up} {
+		background-position: top right;
+	}
+}
+.meet {
+	@extend .contact;
+	padding-top: rem-calc(200);
+	position: relative;
+	padding-bottom: rem-calc(100);
+}
+.meet_bg {
+	@extend .contact_bg;
+	background: #505050 image-url("del.jpg") no-repeat;
+	position: fixed;
+	background-position: top left;
+	//margin-top: rem-calc(150);
+
+	@media #{$small-only} {
+		background-size: auto 140%;
+	}
+
+	@media #{$medium-only} {
+		left: -20%;
+		width: 1100%;
+		background-size: auto 100%;
+	}
+}
+@include keyframes( scale ) {
+	from {
+		opacity: 0.1;
+	} to {
+		opacity: 1;
+	}
+}
+
+@include keyframes( slideFade ) {
+	from {
+		@include transform( translateY( 100%) );
+		opacity: 0;
+	} to {
+		@include transform( translateY( 0 ) );
+		opacity: 1;
+	}
+}
