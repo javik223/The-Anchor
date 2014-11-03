@@ -1124,14 +1124,15 @@ body::-webkit-selection, p::-webkit-selection, h1::-webkit-selection, h2::-webki
 }
 /* line 213, ../scss/app.scss */
 .teaser_item.teaser_item-main .the-anchor-text-image {
-  margin-top: -5%;
+  margin-top: -40%;
 }
 @media only screen and (max-width: 40em) {
   /* line 213, ../scss/app.scss */
   .teaser_item.teaser_item-main .the-anchor-text-image {
     display: block;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: -10%;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -1143,8 +1144,13 @@ body::-webkit-selection, p::-webkit-selection, h1::-webkit-selection, h2::-webki
     margin-top: 0;
   }
 }
+/* line 230, ../scss/app.scss */
+.teaser_item.teaser_item-main .the-anchor-text-image svg {
+  width: 28.125rem;
+  max-width: 100% !important;
+}
 
-/* line 235, ../scss/app.scss */
+/* line 241, ../scss/app.scss */
 .contact, .meet {
   width: 100%;
   height: 100%;
@@ -1157,25 +1163,25 @@ body::-webkit-selection, p::-webkit-selection, h1::-webkit-selection, h2::-webki
   padding-top: 6.25rem;
   overflow-y: hidden;
 }
-/* line 247, ../scss/app.scss */
+/* line 253, ../scss/app.scss */
 .contact .row, .meet .row, .contact .nav, .meet .nav {
   height: 100%;
   position: relative;
   z-index: 100;
 }
-/* line 253, ../scss/app.scss */
+/* line 259, ../scss/app.scss */
 .contact .contact_info, .meet .contact_info {
   display: table;
   vertical-align: middle;
   height: 100%;
   padding-bottom: 1.875rem;
 }
-/* line 259, ../scss/app.scss */
+/* line 265, ../scss/app.scss */
 .contact .contact_info > div, .meet .contact_info > div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 264, ../scss/app.scss */
+/* line 270, ../scss/app.scss */
 .contact .contact_info a, .meet .contact_info a {
   color: #909090;
   text-decoration: none;
@@ -1185,12 +1191,12 @@ body::-webkit-selection, p::-webkit-selection, h1::-webkit-selection, h2::-webki
   transition: all 0.6 ease-in;
   display: inline-block;
 }
-/* line 271, ../scss/app.scss */
+/* line 277, ../scss/app.scss */
 .contact .contact_info a:hover, .meet .contact_info a:hover {
   color: #024da1;
 }
 
-/* line 277, ../scss/app.scss */
+/* line 283, ../scss/app.scss */
 .contact_bg, .meet_bg {
   width: 100%;
   height: 100%;
@@ -1206,33 +1212,33 @@ body::-webkit-selection, p::-webkit-selection, h1::-webkit-selection, h2::-webki
   animation: scale 3s ease-in-out;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 277, ../scss/app.scss */
+  /* line 283, ../scss/app.scss */
   .contact_bg, .meet_bg {
     background-position: top right;
   }
 }
 
-/* line 293, ../scss/app.scss */
+/* line 299, ../scss/app.scss */
 .meet {
   padding-top: 12.5rem;
   position: relative;
   padding-bottom: 6.25rem;
 }
 
-/* line 299, ../scss/app.scss */
+/* line 305, ../scss/app.scss */
 .meet_bg {
   background: #505050 url('/assets/img/del.jpg?1414947501') no-repeat;
   position: fixed;
   background-position: top left;
 }
 @media only screen and (max-width: 40em) {
-  /* line 299, ../scss/app.scss */
+  /* line 305, ../scss/app.scss */
   .meet_bg {
     background-size: auto 140%;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 299, ../scss/app.scss */
+  /* line 305, ../scss/app.scss */
   .meet_bg {
     left: -20%;
     width: 1100%;
@@ -1241,66 +1247,66 @@ body::-webkit-selection, p::-webkit-selection, h1::-webkit-selection, h2::-webki
 }
 
 @-webkit-keyframes scale {
-  /* line 317, ../scss/app.scss */
+  /* line 323, ../scss/app.scss */
   from {
     opacity: 0.1;
   }
 
-  /* line 319, ../scss/app.scss */
+  /* line 325, ../scss/app.scss */
   to {
     opacity: 1;
   }
 }
 @-moz-keyframes scale {
-  /* line 317, ../scss/app.scss */
+  /* line 323, ../scss/app.scss */
   from {
     opacity: 0.1;
   }
 
-  /* line 319, ../scss/app.scss */
+  /* line 325, ../scss/app.scss */
   to {
     opacity: 1;
   }
 }
 @keyframes scale {
-  /* line 317, ../scss/app.scss */
+  /* line 323, ../scss/app.scss */
   from {
     opacity: 0.1;
   }
 
-  /* line 319, ../scss/app.scss */
+  /* line 325, ../scss/app.scss */
   to {
     opacity: 1;
   }
 }
 @-webkit-keyframes slideFade {
-  /* line 325, ../scss/app.scss */
+  /* line 331, ../scss/app.scss */
   from {
     -webkit-transform: translateY(100%);
     opacity: 0;
   }
 
-  /* line 328, ../scss/app.scss */
+  /* line 334, ../scss/app.scss */
   to {
     -webkit-transform: translateY(0);
     opacity: 1;
   }
 }
 @-moz-keyframes slideFade {
-  /* line 325, ../scss/app.scss */
+  /* line 331, ../scss/app.scss */
   from {
     -moz-transform: translateY(100%);
     opacity: 0;
   }
 
-  /* line 328, ../scss/app.scss */
+  /* line 334, ../scss/app.scss */
   to {
     -moz-transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes slideFade {
-  /* line 325, ../scss/app.scss */
+  /* line 331, ../scss/app.scss */
   from {
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
@@ -1310,7 +1316,7 @@ body::-webkit-selection, p::-webkit-selection, h1::-webkit-selection, h2::-webki
     opacity: 0;
   }
 
-  /* line 328, ../scss/app.scss */
+  /* line 334, ../scss/app.scss */
   to {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1318,5 +1324,76 @@ body::-webkit-selection, p::-webkit-selection, h1::-webkit-selection, h2::-webki
     -o-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+/* line 339, ../scss/app.scss */
+.see {
+  position: absolute;
+  height: 100%;
+}
+/* line 343, ../scss/app.scss */
+.see img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  opacity: 0.5;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+/* line 353, ../scss/app.scss */
+.see img:hover {
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+  filter: gray;
+  opacity: 1;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+}
+/* line 363, ../scss/app.scss */
+.see .see_container {
+  overflow: hidden;
+  position: relative;
+  overflow-y: visible;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 363, ../scss/app.scss */
+  .see .see_container {
+    overflow-y: hidden;
+    height: 100%;
+  }
+}
+/* line 374, ../scss/app.scss */
+.see .see_container a {
+  display: inline-block;
+  overflow: hidden;
+}
+/* line 379, ../scss/app.scss */
+.see .see_content {
+  height: auto;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+/* line 387, ../scss/app.scss */
+.see .see_content::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 379, ../scss/app.scss */
+  .see .see_content {
+    height: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    left: 0;
   }
 }

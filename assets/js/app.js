@@ -211,8 +211,7 @@ $(document).ready(function() {
                 smoothChildTiming: true,
                 align: "sequence"
             }),
-            $bg = $(".the-anchor-bg"),
-            $textImage = $(".the-anchor-text-image");
+            $bg = $(".the-anchor-bg");
         //Separate heading text into words
         $t4.find("h1").lettering('words');
 
@@ -243,13 +242,7 @@ $(document).ready(function() {
             force3D: true
         }, 0.1);
 
-        //Fade in character elements
-        s4.to($textImage, 3, {
-            autoAlpha: 1,
-            rotationY: 0,
-            x: 0,
-            force3D: true
-        });
+        animateAnchorImage();
 
         //Fade in character elements
         s4.to($bg, 5, {
@@ -323,6 +316,27 @@ $(document).ready(function() {
             ease: Sine.ease
         }, 1);
     };
+
+    var animateAnchorImage = function() {
+        var $path = $(".path"),
+            p = new TimelineMax(),
+            $textImage = $(".the-anchor-text-image"),
+            pathLength = ($path.length > 0)? document.querySelector('.path').getTotalLength() : 0;
+
+             //Fade in character elements
+            p.to($textImage, 0.6, {
+                autoAlpha: 1,
+                rotationY: 0,
+                x: 0,
+                force3D: true
+            });
+
+        p.fromTo($path, 8, {"stroke-dasharray": -(pathLength), "stroke-dashoffset": pathLength, stroke: "#000", fill: "transparent"}, {"stroke-dasharray": pathLength, "stroke-dashoffset": 0, stroke: "#fff", onComplete: function(){
+            p.to($path, 1, {fill: "#fff"});
+        }});
+    };
+
+    $(".see_content").lightGallery();
 
     animateSlide1();
 
