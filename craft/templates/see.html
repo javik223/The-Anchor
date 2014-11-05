@@ -1,0 +1,37 @@
+{% extends "_layout" %}
+
+{% set title = 'The Anchor - Videos, People and Events' %}
+
+{% block content %}
+{% cache %}
+<div class="container see">
+    <div class="see_container col m-5-12 l-6-12">
+        <div class="see_content">
+            {% for image in entry.sectionone %}
+                <a data-src="{{ image.getUrl() }}">
+                    <img src="{{ image.getUrl('bigThumb') }}" alt="{{ image.title }}" width="{{ image.getWidth('bigThumb')}}" height="{{ image.getHeight('bigThumb')}}">
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="see_container col m-4-12 l-3-12">
+        <div class="see_content">
+           {% for image in entry.sectiontwo %}
+                <a data-src="{{ image.getUrl() }}">
+                    <img src="{{ image.getUrl('mediumThumb') }}" alt="{{ image.title }}" width="{{ image.getWidth('mediumThumb')}}" height="{{ image.getHeight('mediumThumb')}}">
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="see_container col m-3-12 l-3-12">
+        <div class="see_content">
+            {% for image in entry.sectionthree %}
+                <a data-src="{{ image.getUrl() }}">
+                    <img src="{{ image.getUrl('mediumThumb') }}" alt="{{ image.title }}" width="{{ image.getWidth('mediumThumb')}}" height="{{ image.getHeight('mediumThumb')}}">
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endcache %}
+{% endblock %}

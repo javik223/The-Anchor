@@ -1,0 +1,70 @@
+{#
+ # Layout template
+ # ---------------
+ #
+ # This template defines your site’s global layout. It can be
+ # “extended” by other templates to fill in the gaps.
+ #
+ # See Twig’s Template Inheritance documentation for more details:
+ # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
+ #}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+	<link rel="home" href="{{ siteUrl }}" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	  <link type="text/css" rel="stylesheet" href="/assets/js/lightGallery/src/css/lightGallery.css" />   
+	  <link rel="stylesheet" href="/assets/css/app.css">
+	  <script src="//use.typekit.net/wer3vxs.js"></script>
+	  <script>try{Typekit.load();}catch(e){}</script>
+	</head>
+</head>
+
+<body {% if craft.request.firstSegment == '' %}class="body"{% endif %}
+>
+<!--Header-->
+<nav class="mobileNav">
+  <div class="mobileNav_menu">
+    <div class="icon-menu"></div>
+    </div>
+
+   <ul class="navList">
+       <li><a href="/what" title="About the Anchor">What</a></li>
+       <li><a href="/meet" title="Meet The Anchor">Meet</a></li>
+        <li><a href="/see" title="Videos, Events &amp; Photos of The Anchor">See</a></li>
+        <li><a href="/connect" title="Connect and contact The Anchor">Connect</a></li>
+    </ul>
+</nav>
+
+<div class="header">
+    <nav class="nav" role="navigation">
+        <ul>
+            <li><a href="/what" title="About the Anchor">What</a></li>
+            <li><a href="/meet" title="Meet The Anchor">Meet</a></li>
+            <li class="logo">
+                <a href="/" title="The Anchor"><img src="/assets/img/the-anchor-logo.svg" alt="The Anchor" width="80" height="80"></a>
+
+                <h1>The Anchor</h1>
+            </li>
+            <li><a href="/see" title="Videos, Events &amp; Photos of The Anchor">See</a></li>
+            <li><a href="/connect" title="Connect and contact The Anchor">Connect</a></li>
+        </ul>
+    </nav>
+</div>
+<!--Header ends-->
+
+	{% block content %}
+	{% endblock %}
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/assets/js/TweenMax.min.js"></script>
+<script src="/assets/js/jquery.lettering.js"></script>
+<script src="/assets/js/lightGallery/src/js/lightGallery.min.js"></script>
+<script src="/assets/js/min/app-min.js"></script>
+</body>
+</html>

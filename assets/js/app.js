@@ -1,6 +1,10 @@
 $(document).ready(function() {
     //Universal timeline tracker
-    var s = new TimelineMax();
+    var s = new TimelineMax(),
+        $body = $("body"),
+        $mobileMenuIcon = $(".mobileNav_menu"),
+        mobileMenuState = "close",
+        $mobileList = $(".mobileNav .navList");
 
     var $teaser = $(".teaser"),
         $teaserElements = $(".teaser").find("div"),
@@ -19,6 +23,7 @@ $(document).ready(function() {
     s.set($teaserElements, {
         autoAlpha: 0
     });
+    s.set($mobileList, {display: "block", autoAlpha: "0"});
 
     var animateSlide1 = function() {
         //TimelineMax instance
@@ -26,6 +31,7 @@ $(document).ready(function() {
             smoothChildTiming: true,
             align: "sequence"
         });
+        s1.set($(".teaser"), {autoAlpha: 1});
         //Separate heading text into words
         $t1.find("h1").lettering('words');
 
@@ -336,9 +342,36 @@ $(document).ready(function() {
         }});
     };
 
+    var animateMobileMenu = function($state) {
+        var $mobileListItems = $mobileList.find("li"),
+            mt = new TimelineMax();
+
+            if ($state == "open") {
+                mt.to($mobileList, 1, {autoAlpha: 1});
+                mt.staggerFromTo($mobileListItems, 1, {y: "100%", autoAlpha: 0}, {y: 0, autoAlpha: 1}, 0.3);
+            } else {
+               mt.staggerFromTo($mobileListItems, 0.6, {autoAlpha: 1}, {autoAlpha: 0}, 0.1);
+                mt.to($mobileList, 0.6, {autoAlpha: 0});
+            }
+    };
+
+    $mobileMenuIcon.on('click', function() {
+        if (mobileMenuState == "close") {
+            animateMobileMenu("open");
+            mobileMenuState = "open";
+        } else {
+            animateMobileMenu("close");
+            mobileMenuState = "close";
+        }
+    });
+
     $(".see_content").lightGallery();
 
-    animateSlide1();
+    if ($body.hasClass('body')) {
+        animateSlide1();
+    } else {
+        animateMenu();
+    }
 
     animateContact();
 });
