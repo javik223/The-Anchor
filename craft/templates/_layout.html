@@ -10,14 +10,16 @@
  #}
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" manifest="anchor.appcache">
 <head>
 	<meta charset="utf-8" />
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <script>try{Typekit.load();}catch(e){}</script><link rel="stylesheet" href="/assets/css/app.css">
+    <script src="//use.typekit.net/wer3vxs.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="/assets/css/app.css">
     {% block extracss %}
 
     {% endblock %}
@@ -64,7 +66,8 @@
 <script>
     Modernizr.load([
         {
-            load: '/assets/js/jquery.min.js',
+            load: '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
+            nope: '/assets/js/jquery.min.js',
         }, {
             load: '/assets/js/min/TweenMax.min.js'
         }, {
@@ -72,7 +75,7 @@
             yep: '/assets/js/min/jquery.lettering-min.js'
         }, {
             test: document.getElementsByClassName('see').length > 0,
-            yep: '/assets/js/lightGallery/src/js/lightGallery.min.js'
+            yep: ['/assets/js/lightGallery/src/js/lightGallery.min.js', '/assets/js/min/jquery.unveil-min.js']
         }, {
             load: '/assets/js/min/app-min.js'
         }

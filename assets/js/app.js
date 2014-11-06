@@ -433,6 +433,9 @@ $(document).ready(function() {
     //Attach the Light Gallery plugin if 'see_content' class if it exists on page
     if ($see_content.length > 0) {
         $(".see_content").lightGallery();
+
+        $img = $(".see_content img");
+        $img.unveil('1000');
     }
 
     if ($body.hasClass('body')) {

@@ -1069,6 +1069,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/blank.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 524,
+		"inputAbbreviatedPath": "\/assets\/img\/blank.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/blank.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/Del-mobile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1087,6 +1098,17 @@
 		"initialSize": 48311,
 		"inputAbbreviatedPath": "\/assets\/img\/Del-tablet.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/Del-tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/del-the-anchor-main-pics-original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66759,
+		"inputAbbreviatedPath": "\/assets\/img\/del-the-anchor-main-pics-original.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/del-the-anchor-main-pics-original.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1120,17 +1142,6 @@
 		"initialSize": 155764,
 		"inputAbbreviatedPath": "\/assets\/img\/Del-the-anchor.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/Del-the-anchor.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/Del-the-anchor3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 368755,
-		"inputAbbreviatedPath": "\/assets\/img\/Del-the-anchor3.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/Del-the-anchor3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1209,6 +1220,17 @@
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/jquery.unveil.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/jquery.unveil.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.unveil-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -1388,6 +1410,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/min\/jquery.lettering-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/jquery.lettering-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/min\/jquery.unveil-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/jquery.unveil-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/jquery.unveil-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
