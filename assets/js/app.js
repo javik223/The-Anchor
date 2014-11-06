@@ -1,29 +1,49 @@
 $(document).ready(function() {
-    //Universal timeline tracker
+    
+    //Track number of times the visitor has visited the page
+    var numOfVisits = function() {
+        var cookie = document.cookie,
+            numVisits = 0;
+
+        if ( cookie.match(/^(visited)=[/d]*/i) ) {
+            cookie.replace(/^(visited)=([0-9])*/i, function(match, p1, p2) {
+                numVisits = p2;
+                cookie = 'visited='+ (++p2);
+                document.cookie = cookie;
+            });
+        } else {
+            numVisits = 1;
+            document.cookie = "visited=1";
+        }
+
+        return numVisits;
+    };
+
+    //Universal timeline object
     var s = new TimelineMax(),
         $body = $("body"),
         $mobileMenuIcon = $(".mobileNav_menu"),
-        mobileMenuState = "close",
-        $mobileList = $(".mobileNav .navList");
+        mobileMenuState = "close", //Current state of menu: close or open
+        $mobileList = $(".mobileNav .navList"); //Mobile nav list
 
-    var $teaser = $(".teaser"),
-        $teaserElements = $(".teaser").find("div"),
+    var $teaser = $(".teaser"), // Teaser container on homepage
+        $teaserElements = $(".teaser").find("div"), //Cache all teaser elements
         $t1 = $teaser.find(" > div:eq(0)"),
         $t2 = $teaser.find(" > div:eq(1)"),
         $t3 = $teaser.find(" > div:eq(2)"),
         $t4 = $teaser.find(" > div:eq(3)"),
 
         $menu = $(".nav ul"),
-        $menuItems = $menu.find("li:not('.logo')"),
+        $menuItems = $menu.find("li:not('.logo')"), //
         $logo = $menu.find('.logo');
-
-    console.log($menuItems);
 
     //Hide all teaser elements
     s.set($teaserElements, {
         autoAlpha: 0
     });
-    s.set($mobileList, {display: "block", autoAlpha: "0"});
+
+    //Make Teaser Element visible to avoid flicker
+    s.set($(".teaser"), {autoAlpha: 1});
 
     var animateSlide1 = function() {
         //TimelineMax instance
@@ -31,7 +51,6 @@ $(document).ready(function() {
             smoothChildTiming: true,
             align: "sequence"
         });
-        s1.set($(".teaser"), {autoAlpha: 1});
         //Separate heading text into words
         $t1.find("h1").lettering('words');
 
@@ -50,23 +69,24 @@ $(document).ready(function() {
         });
 
         //Show first Teaser Element
-        s.to($t1, 0.3, {
+        s.to($t1, 0.01, {
             autoAlpha: 1
         });
 
         //Fade in character elements
-        s.staggerTo($t1Spans, 2, {
+        s.staggerTo($t1Spans, 1.6, {
             autoAlpha: 1,
             rotationY: 0,
             x: 0,
             force3D: true
         }, 0.1);
 
-        //Fade out charater elemenets
+        //Fade out character elemenets
         s.staggerTo($t1Spans, 1, {
             autoAlpha: 0,
             rotationX: "45deg",
-            delay: 2
+            delay: 0.3,
+            force3D: true
         }, -0.1);
 
         //Hide teaser elemenet
@@ -102,7 +122,7 @@ $(document).ready(function() {
         });
 
         //Show first Teaser Element
-        s2.to($t2, 0.3, {
+        s2.to($t2, 0.01, {
             autoAlpha: 1
         });
 
@@ -118,7 +138,7 @@ $(document).ready(function() {
         s2.staggerTo($t2Spans, 1, {
             autoAlpha: 0,
             rotationX: "45deg",
-            delay: 2
+            delay: 1
         }, -0.1);
 
         //Hide teaser elemenet
@@ -169,12 +189,12 @@ $(document).ready(function() {
 
 
         //Show first Teaser Element
-        s3.to($t3, 0.3, {
+        s3.to($t3, 0.01, {
             autoAlpha: 1
         });
 
         //Fade in character elements
-        s3.staggerTo([$t31Spans, $t32Spans], 1, {
+        s3.staggerTo([$t31Spans, $t32Spans], 0.6, {
             autoAlpha: 1,
             rotationY: 0,
             y: 0,
@@ -182,7 +202,7 @@ $(document).ready(function() {
             ease: Bounce.easeOut
         }, 0.01);
 
-        s3.staggerTo($t3Spans, 2, {
+        s3.staggerTo($t3Spans, 1, {
             autoAlpha: 1,
             rotationY: 0,
             x: 0,
@@ -191,13 +211,13 @@ $(document).ready(function() {
 
 
         //Fade out charater elemenets
-        s3.staggerTo($t3Spans, 1, {
+        s3.staggerTo($t3Spans, 0.6, {
             autoAlpha: 0,
             rotationX: "45deg",
-            delay: 4
+            delay: 0.8
         }, -0.1);
 
-        s3.staggerTo([$t31Spans, $t32Spans], 1, {
+        s3.staggerTo([$t31Spans, $t32Spans], 0.6, {
             autoAlpha: 0,
             rotationX: "45deg"
         }, -0.1);
@@ -251,7 +271,7 @@ $(document).ready(function() {
         animateAnchorImage();
 
         //Fade in character elements
-        s4.to($bg, 5, {
+        s4.to($bg, 3, {
             autoAlpha: 1,
             rotationY: 0,
             x: 0,
@@ -273,10 +293,47 @@ $(document).ready(function() {
         });
     };
 
+    var animationSkip = function() {
+        //TimelineMax instance
+        var s4 = new TimelineMax({
+                smoothChildTiming: true,
+                align: "sequence"
+            }),
+            $bg = $(".the-anchor-bg");
+
+        //Hide 'He tagline'
+        s4.set($t4.find("h1"), {
+            autoAlpha: 0
+        });
+
+        //Show first Teaser Element
+        s4.to($t4, 0.3, {
+            autoAlpha: 1
+        });
+
+        animateAnchorImage();
+
+        //Fade in character elements
+        s4.to($bg, 6, {
+            autoAlpha: 1,
+            rotationY: 0,
+            x: 0,
+            force3D: true
+        });
+
+        //Hide teaser elemenet
+        s4.set($t4, {
+            autoAlpha: 1,
+            onComplete: function() {
+                animateMenu();
+            }
+        });
+    };
+
     var animateMenu = function() {
         var a = new TimelineMax();
 
-        a.fromTo($logo, 0.6, {
+        a.fromTo($logo, 1, {
             autoAlpha: 0,
             scale: 0,
             y: "20%"
@@ -288,7 +345,7 @@ $(document).ready(function() {
             ease: Back.easeOut
         });
 
-        a.staggerFromTo($menuItems, 4, {
+        a.staggerFromTo($menuItems, 1, {
             autoAlpha: 0,
             y: "20%",
             ease: Expo.easeIn
@@ -296,22 +353,23 @@ $(document).ready(function() {
             autoAlpha: 1,
             y: 0,
             ease: Sine.easeOut
-        }, 0.3);
+        }, 0.1);
     };
 
+    //Animate all items on the contact page
     var animateContact = function() {
         var c = new TimelineMax(),
             contact = $(".contact_info"),
             divs = contact.find("div"),
             ps = contact.find("p"),
-            as = contact.find("as");
-        headers = contact.find("h1, h2, h3, h4, h5, h6");
+            as = contact.find("a");
 
         c.set(contact, {
-            perspective: 1000
+            perspective: 1000,
+            autoAlpha: 1
         });
 
-        c.staggerFrom([divs, contact.find("h1"), contact.find("h3"), contact.find("a:eq(0)"), contact.find("a:eq(1)")], 1, {
+        c.staggerFrom([divs, contact.find("h1"), contact.find("h3"), ps, as], 1, {
             y: "100%",
             autoAlpha: 0,
             z: 0,
@@ -337,21 +395,25 @@ $(document).ready(function() {
                 force3D: true
             });
 
-        p.fromTo($path, 8, {"stroke-dasharray": -(pathLength), "stroke-dashoffset": pathLength, stroke: "#000", fill: "transparent"}, {"stroke-dasharray": pathLength, "stroke-dashoffset": 0, stroke: "#fff", onComplete: function(){
-            p.to($path, 1, {fill: "#fff"});
+        p.fromTo($path, 5, {"stroke-dasharray": -(pathLength), "stroke-dashoffset": pathLength, stroke: "#000", fill: "transparent"}, {"stroke-dasharray": pathLength, "stroke-dashoffset": 0, stroke: "#fff", onComplete: function(){
+            p.to($path, 0.6, {fill: "#fff"});
         }});
     };
 
     var animateMobileMenu = function($state) {
         var $mobileListItems = $mobileList.find("li"),
-            mt = new TimelineMax();
+            $navList = $(".navList"),
+            mt = new TimelineMax({
+                smoothChildTiming: true,
+                align: "sequence"
+            });
 
             if ($state == "open") {
-                mt.to($mobileList, 1, {autoAlpha: 1});
-                mt.staggerFromTo($mobileListItems, 1, {y: "100%", autoAlpha: 0}, {y: 0, autoAlpha: 1}, 0.3);
+                mt.to($mobileList, 0.3, {height: "100%", force3D: true});
+                mt.staggerFromTo($mobileListItems, 0.6, {y: "100%", autoAlpha: 0}, {y: 0, autoAlpha: 1}, 0.1);
             } else {
-               mt.staggerFromTo($mobileListItems, 0.6, {autoAlpha: 1}, {autoAlpha: 0}, 0.1);
-                mt.to($mobileList, 0.6, {autoAlpha: 0});
+                mt.staggerTo($mobileListItems, 0.6, {autoAlpha: 0},  0.1);
+                mt.to($mobileList, 0.3, {height: 0 , force3D: true});
             }
     };
 
@@ -365,10 +427,20 @@ $(document).ready(function() {
         }
     });
 
-    $(".see_content").lightGallery();
+    //Cache See element container
+    $see_content = $(".see_content");
+
+    //Attach the Light Gallery plugin if 'see_content' class if it exists on page
+    if ($see_content.length > 0) {
+        $(".see_content").lightGallery();
+    }
 
     if ($body.hasClass('body')) {
-        animateSlide1();
+        if ( numOfVisits() > 1 ) {
+            animationSkip();
+        } else {
+            animateSlide1();
+        }
     } else {
         animateMenu();
     }

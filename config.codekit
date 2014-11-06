@@ -83,6 +83,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/css\/lightGallery.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/lightGallery.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/css\/mixins\/global.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -91,6 +100,490 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-001.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54871,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-001.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-001.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-002.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59380,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-002.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-002.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-004.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65547,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-004.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-004.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-007.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68509,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-007.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-007.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-020.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80795,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-020.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-020.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-021.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66302,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-021.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-021.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-022.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95479,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-022.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-022.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-023.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45446,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-023.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-023.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-024.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61017,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-024.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-024.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-027.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42299,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-027.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-027.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-030.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59655,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-030.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-030.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-032.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58763,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-032.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-032.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-033.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45174,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-033.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-033.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-034.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54368,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-034.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-034.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-037.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 76707,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-037.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-037.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-042.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74204,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-042.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-042.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_bigThumb\/The-Anchor-Del-043.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47402,
+		"inputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-043.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_bigThumb\/The-Anchor-Del-043.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-003.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42785,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-003.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-003.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-005.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48448,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-005.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-005.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-006.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42171,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-006.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-006.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-008.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66543,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-008.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-008.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-009.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 87878,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-009.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-009.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-010.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67485,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-010.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-010.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-011.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69660,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-011.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-011.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-012.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39838,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-012.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-012.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-013.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47077,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-013.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-013.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-014.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44979,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-014.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-014.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-015.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41535,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-015.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-015.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-016.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 90728,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-016.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-016.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-017.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66608,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-017.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-017.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-018.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58144,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-018.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-018.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-019.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59254,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-019.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-019.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-025.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58561,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-025.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-025.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-026.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42646,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-026.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-026.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-028.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39516,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-028.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-028.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-029.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40133,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-029.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-029.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-031.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37291,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-031.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-031.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-035.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56356,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-035.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-035.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-036.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45478,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-036.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-036.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-038.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33927,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-038.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-038.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-039.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38185,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-039.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-039.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-040.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33413,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-040.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-040.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-041.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68993,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-041.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-041.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/_mediumThumb\/The-Anchor-Del-044.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54678,
+		"inputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-044.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/_mediumThumb\/The-Anchor-Del-044.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/images\/The-Anchor-Del-001.jpg": {
 		"fileType": 16384,
@@ -576,6 +1069,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/Del-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35475,
+		"inputAbbreviatedPath": "\/assets\/img\/Del-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/Del-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Del-tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48311,
+		"inputAbbreviatedPath": "\/assets\/img\/Del-tablet.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/Del-tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/del-the-anchor-main-pics.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -583,6 +1098,17 @@
 		"initialSize": 1.88741e+06,
 		"inputAbbreviatedPath": "\/assets\/img\/del-the-anchor-main-pics.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/del-the-anchor-main-pics.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Del-the-anchor-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95835,
+		"inputAbbreviatedPath": "\/assets\/img\/Del-the-anchor-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/Del-the-anchor-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -616,6 +1142,17 @@
 		"initialSize": 153783,
 		"inputAbbreviatedPath": "\/assets\/img\/Del.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/Del.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/dele-balogun-the-anchor-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52843,
+		"inputAbbreviatedPath": "\/assets\/img\/dele-balogun-the-anchor-mobile.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/dele-balogun-the-anchor-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -655,10 +1192,21 @@
 		},
 	"\/assets\/js\/jquery.lettering.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery.lettering.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.lettering-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/jquery.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/jquery.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -814,7 +1362,7 @@
 		},
 	"\/assets\/js\/lightGallery\/src\/js\/lightGallery.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/lightGallery\/src\/js\/lightGallery.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/lightGallery\/src\/js\/min\/lightGallery.min-min.js",
@@ -834,12 +1382,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/min\/jquery.lettering-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/jquery.lettering-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/jquery.lettering-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/min\/main-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/min\/main-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/main-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/min\/modernizr-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/modernizr-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/modernizr-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -878,6 +1448,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/min\/TweenMax.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/TweenMax.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/TweenMax.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/min\/utils-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -895,6 +1476,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/min\/vector-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/vector-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/modernizr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/modernizr.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/modernizr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -935,12 +1527,12 @@
 		},
 	"\/assets\/js\/TweenMax.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/TweenMax.min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/TweenMax.min-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/TweenMax.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -4854,14 +5446,16 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/svg-test.html": {
-		"fileType": 8192,
+	"\/TweenMax.min.js": {
+		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/svg-test.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/TweenMax.min.js",
+		"outputAbbreviatedPath": "\/min\/TweenMax.min-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/what.html": {
 		"fileType": 8192,
@@ -4877,26 +5471,6 @@
 	],
 "lastSavedByUser": "Javik",
 "manualImportLinks": {
-	"\/assets\/js\/app.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/TweenMax.min.js",
-			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/jquery.lettering.js",
-			"position": 1,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/lightGallery\/src\/js\/lightGallery.min.js",
-			"position": 2,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
@@ -5219,7 +5793,7 @@
 			"flagValue": -1
 			},
 		"newcap": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"noarg": {
@@ -5247,7 +5821,7 @@
 			"flagValue": -1
 			},
 		"notypeof": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"noyield": {

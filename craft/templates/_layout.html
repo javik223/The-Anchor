@@ -17,10 +17,11 @@
 	<link rel="home" href="{{ siteUrl }}" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	  <link type="text/css" rel="stylesheet" href="/assets/js/lightGallery/src/css/lightGallery.css" />   
-	  <link rel="stylesheet" href="/assets/css/app.css">
-	  <script src="//use.typekit.net/wer3vxs.js"></script>
-	  <script>try{Typekit.load();}catch(e){}</script>
+    <script>try{Typekit.load();}catch(e){}</script><link rel="stylesheet" href="/assets/css/app.css">
+    {% block extracss %}
+
+    {% endblock %}
+      <script src="/assets/js/min/modernizr-min.js"></script>
 	</head>
 </head>
 
@@ -60,11 +61,22 @@
 	{% block content %}
 	{% endblock %}
 
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/assets/js/TweenMax.min.js"></script>
-<script src="/assets/js/jquery.lettering.js"></script>
-<script src="/assets/js/lightGallery/src/js/lightGallery.min.js"></script>
-<script src="/assets/js/min/app-min.js"></script>
+<script>
+    Modernizr.load([
+        {
+            load: '/assets/js/jquery.min.js',
+        }, {
+            load: '/assets/js/min/TweenMax.min.js'
+        }, {
+            test: document.getElementsByClassName('teaser').length > 0,
+            yep: '/assets/js/min/jquery.lettering-min.js'
+        }, {
+            test: document.getElementsByClassName('see').length > 0,
+            yep: '/assets/js/lightGallery/src/js/lightGallery.min.js'
+        }, {
+            load: '/assets/js/min/app-min.js'
+        }
+    ]);
+</script>
 </body>
 </html>

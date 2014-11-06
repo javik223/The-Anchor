@@ -6,7 +6,6 @@
 @import "mixins/type";
 @import "mixins/grid";
 @import "mixins/fonts";
-@import "mixins/lightgallery";
 
 
 html, body {
@@ -111,13 +110,12 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, a {
 	.navList {
 		font-size: rem-calc(30);
 		width: 100%;
-		height: 100%;
+		height: 0;
 		position: absolute;
 		z-index: 600;
-		padding-top: rem-calc(40);
+		//padding-top: rem-calc(40);
 		background-color: rgba($black, 0.9);
-		display: none;
-		opacity: 0;
+		overflow: hidden;
 
 		li {
 			display: block;
@@ -213,12 +211,6 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, a {
 		position: relative;
 		z-index: 200;
 		display: table-cell;
-
-		img {
-			float: left;
-			max-width: 100% !important;
-			vertical-align: middle;
-		}
 	}
 
 	.the-anchor-bg {
@@ -246,16 +238,24 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, a {
 
 	&.teaser_item-main {
 		vertical-align: middle;
+		position: relative;
 
 		h1 {
 			display: block;
 			width: 100%;
 			margin-top: 65%;
 
+			@media #{$small-only} {
+				position: absolute;
+				display: block;
+				bottom: rem-calc(200);
+			}
+
 			@media #{$medium-only} {
 				width: auto;
 				display: block !important;
-				margin-top: 50%;
+				position: absolute;
+				bottom: rem-calc(300);
 				text-align: left;
 				margin-left: 10%;
 			}
@@ -267,20 +267,22 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, a {
 		}
 
 		.the-anchor-text-image {
-			margin-top: -40%;
-
 			@media #{$small-only} {
 				display: block;
-				width: 100%;
-				margin-left: 0%;
-				margin-bottom: -10%;
+				height: rem-calc(210);
+				width: 80%;
+				position: absolute;
+				bottom: 0;
 			}
 
 			@media #{$medium-only} {
 				width: 80%;
 				margin-left: 5%;
 				display: block;
-				margin-top: 0;
+				height: auto;
+				position: absolute;
+				bottom: 0;
+				height: rem-calc(350);
 			}
 
 			svg {
@@ -317,6 +319,11 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, a {
 		vertical-align: middle;
 		height: 100%;
 		padding-bottom: rem-calc(30);
+		overflow-y: hidden;
+
+		.js & {
+			opacity: 0;
+		}
 
 		> div {
 			display: table-cell;
@@ -342,14 +349,15 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: image-url("dele-balogun-the-anchor.jpg") no-repeat;
+	background: image-url("dele-balogun-the-anchor-mobile.jpg") no-repeat;
 	background-size: auto 100%;
 	background-position: top 80%;
 	z-index: 0;
 	@include animation( scale 3.0s ease-in-out );
 	@include transition ( all 1.0s ease-in-out );
 
-	@media #{$large-up} {
+	@media #{$medium-up} {
+		background-image: image-url("dele-balogun-the-anchor.jpg") no-repeat;
 		background-position: top right;
 	}
 }
@@ -361,7 +369,7 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, a {
 }
 .meet_bg, .what_bg {
 	@extend .contact_bg;
-	background: #505050 image-url("Del.jpg") no-repeat;
+	background: $black image-url("Del-mobile.jpg") no-repeat;
 	position: fixed;
 	background-position: top left;
 	//margin-top: rem-calc(150);
@@ -371,13 +379,24 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, a {
 	}
 
 	@media #{$medium-only} {
-		left: -20%;
+		left: 0%;
 		width: 1100%;
-		background-size: auto 100%;
+		background-image: image-url("Del-tablet.jpg");
+		background-size: auto 100%;	}
+
+	@media #{$large-up} {
+		background-image: image-url("Del.jpg");
 	}
 }
 .what_bg {
-	background: #d5d6dd image-url("Del-the-anchor.jpg") no-repeat;
+	background: #d5d6dd image-url("Del-the-anchor-mobile.jpg") no-repeat;
+	background-size: auto 100%;
+
+	@media #{$large-up} {
+		background: #d5d6dd image-url("Del-the-anchor.jpg") no-repeat;
+		background-size: 100% auto;
+		background-color: #d7d7df;
+	}
 }
 @include keyframes( scale ) {
 	from {
