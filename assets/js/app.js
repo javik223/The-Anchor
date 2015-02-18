@@ -1,23 +1,45 @@
 $(document).ready(function() {
-    
-    //Track number of times the visitor has visited the page
-    var numOfVisits = function() {
-        var cookie = document.cookie,
-            numVisits = 0;
 
-        if ( cookie.match(/^(visited)=[/d]*/i) ) {
-            cookie.replace(/^(visited)=([0-9])*/i, function(match, p1, p2) {
-                numVisits = p2;
-                cookie = 'visited='+ (++p2);
-                document.cookie = cookie;
-            });
-        } else {
-            numVisits = 1;
-            document.cookie = "visited=1";
+    function Visits() {
+        this.total = 0;
+    }
+
+    Visits.prototype = {
+        getFromLocalStorage: function() {
+            this.total = (localStorage["numVisits"]) ? localStorage["numVisits"] : 0;
+            return this.total;
+        },
+
+        getFromCookie: function() {
+            var numVisits = 0;
+
+            if ( cookie.match(/visited=\d*/i) ) {
+                cookie.replace(/(visited)=(\d)*/i, function(match, p1, p2) {
+                    numVisits = p2;
+                });
+            }
+
+            this.total = numVisits;
+
+            return this.total;
+        },
+
+        upateLocalStorage: function(value) {
+            localStorage["numVisits"] = value;
+        },
+
+        updateCookie: function(value) {
+            document.cookie = 'visited=' + value;
+        },
+
+        getVisits: function() {
+           return (Modernizr.localstorage) ? this.getFromLocalStorage() : this.getFromCookie();
         }
-
-        return numVisits;
     };
+    
+    // Initiate visits object and get the number of times the user has visited this page
+    var visits = new Visits(),
+    numOfVisits = visits.getVisits();
 
     //Universal timeline object
     var s = new TimelineMax(),
@@ -160,7 +182,7 @@ $(document).ready(function() {
         $t3.find("h1").lettering('words');
 
         //Separate every word into characters;
-        $t3words = $t3.find("span:not(.word1, .word2)").lettering();
+        $t3words = $t3.find("span:not(.word1)").lettering();
 
         $t31 = $t3.find(".word1");
         $t31.lettering();
@@ -268,15 +290,19 @@ $(document).ready(function() {
             force3D: true
         }, 0.1);
 
-        animateAnchorImage();
+        s4.set($bg, {scale: 1.2});
 
-        //Fade in character elements
         s4.to($bg, 3, {
             autoAlpha: 1,
             rotationY: 0,
             x: 0,
-            force3D: true
+            scale: 1,
+            force3D: true,
+            ease: Power2.easeOut
         });
+
+        animateAnchorImage();
+
 
         //Fade out charater elemenets
         s4.staggerTo($t4Spans, 0.6, {
@@ -301,6 +327,8 @@ $(document).ready(function() {
             }),
             $bg = $(".the-anchor-bg");
 
+        s4.timeScale(2);
+
         //Hide 'He tagline'
         s4.set($t4.find("h1"), {
             autoAlpha: 0
@@ -314,11 +342,14 @@ $(document).ready(function() {
         animateAnchorImage();
 
         //Fade in character elements
-        s4.to($bg, 6, {
+        s4.set($bg, {scale: 1.2})
+        .to($bg, 5, {
             autoAlpha: 1,
             rotationY: 0,
             x: 0,
-            force3D: true
+            scale: 1,
+            force3D: true,
+            ease: Power2.easeOut
         });
 
         //Hide teaser elemenet
@@ -395,7 +426,7 @@ $(document).ready(function() {
                 force3D: true
             });
 
-        p.fromTo($path, 5, {"stroke-dasharray": -(pathLength), "stroke-dashoffset": pathLength, stroke: "#000", fill: "transparent"}, {"stroke-dasharray": pathLength, "stroke-dashoffset": 0, stroke: "#fff", onComplete: function(){
+        p.fromTo($path, 2, {"stroke-dasharray": -(pathLength), "stroke-dashoffset": pathLength, stroke: "#000", fill: "transparent"}, {"stroke-dasharray": pathLength, "stroke-dashoffset": 0, stroke: "#fff", onComplete: function(){
             p.to($path, 0.6, {fill: "#fff"});
         }});
     };
@@ -439,9 +470,14 @@ $(document).ready(function() {
     }
 
     if ($body.hasClass('body')) {
-        if ( numOfVisits() > 1 ) {
+        if ( numOfVisits > 0 && numOfVisits < 10 ) {
             animationSkip();
+            visits.upateLocalStorage(parseInt(numOfVisits) + 1);
+        } else if (numOfVisits > 10){
+            animationSkip();
+            visits.upateLocalStorage(0);
         } else {
+            visits.upateLocalStorage(parseInt(numOfVisits) + 1);
             animateSlide1();
         }
     } else {
@@ -449,4 +485,29 @@ $(document).ready(function() {
     }
 
     animateContact();
+
+   (function(){
+        $bg = "";
+        if ($(".what_bg").length > 0) {
+            $bg = $(".what_bg");
+        } 
+        if ($(".meet_bg").length > 0) {
+            $bg = $(".meet_bg");
+        }
+
+        if ( Modernizr.mq('only all and (max-width: 560px)') ) {
+            $window = $(window);
+
+            $window.on('scroll', function() {
+                if ($window.scrollTop() === 0) {
+                    TweenLite.to($bg, 1, {opacity: 1});
+                }
+
+               if ($window.scrollTop() > 100) {
+                TweenLite.to($bg, 1, {opacity: 0.2});
+               }
+            }); 
+       }
+   }());
+
 });
